@@ -1,0 +1,56 @@
+/* 页脚与头图透明
+#footer {
+    background: transparent !important;
+  }
+  #page-header {
+    background-color: transparent !important;
+  }
+  
+  /* 白天模式遮罩透明 默认黑色遮罩透明就不好看了 */
+  /* #footer::before {
+    background: transparent !important;
+  } */
+  /* #page-header::before {
+    background: transparent !important;
+  } */
+  
+  /* 夜间模式遮罩透明 */
+  /* [data-theme="dark"] #footer::before {
+    background: transparent !important;
+  }
+  [data-theme="dark"] #page-header::before {
+    background: transparent !important;
+  } */ 
+
+  /* 中间区域（文章主体）背景图片 */
+.post-bg {
+    background-image: url('/img/img2.png') !important; /* 文章封面背景 */
+    background-size: cover;
+    background-position: center;
+    background-color: transparent !important; /* 移除白色 */
+}
+.post-body, #main {
+    background-image: url('/img/img2.png') !important; /* 文章内容背景 */
+    background-size: cover;
+    background-position: center;
+    background-color: transparent !important; /* 移除白色 */
+}
+
+/* 页脚背景图片 */
+#footer {
+    background-image: url('/img/img2.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent !important; /* 移除白色 */
+}
+#footer::before {
+    background: transparent !important; /* 保持遮罩透明 */
+}
+
+/* 暗黑模式调整（可选） */
+[data-theme="dark"] .post-body, [data-theme="dark"] #main {
+    background-image: url('/img/img2.png') !important; /* 暗黑模式专用图片 */
+}
+[data-theme="dark"] #footer {
+    background-image: url('/img/img2.png') !important;
+}
